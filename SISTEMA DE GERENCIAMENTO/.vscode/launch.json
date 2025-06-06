@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "main.App",
+            "projectName": "TESTANDO PROJETO FINAL_1a76d0b8"
+        },
+        {
+            "type": "java",
+            "name": "Run Current Test File",
+            "request": "launch",
+            "mainClass": "org.junit.platform.console.ConsoleLauncher",
+            "args": "--select-file=${file}",
+            "vmArgs": "-Dfile.encoding=UTF-8"
+        }
+    ]
+}

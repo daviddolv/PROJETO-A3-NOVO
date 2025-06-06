@@ -1,0 +1,18 @@
+{
+    "java.test.config": {
+        "workingDirectory": "${workspaceFolder}",
+        "vmArgs": [
+            "-ea"
+        ],
+        "env": {},
+        "args": [],
+        "sourcePaths": [
+            "src"
+        ],
+        "classPaths": [
+            "${workspaceFolder}/bin",
+            "${workspaceFolder}/lib/*"
+        ]
+    },
+    "java.test.defaultConfig": "default"
+}
