@@ -17,18 +17,18 @@ public class SistemaTest {
 
     @Test
     public void testAdicionarAluno() {
-        Aluno aluno = new Aluno("Maria", "maria123", "senha123");
+        Aluno aluno = new Aluno("David Oliveira", "davidanima@educacao.com.br", "senha90452");
         Sistema.adicionarAluno(aluno);
 
         List<Aluno> alunos = Sistema.getAlunos();
         assertEquals(1, alunos.size());
-        assertEquals("Maria", alunos.get(0).getNome());
+        assertEquals("David Oliveira", alunos.get(0).getNome());
         assertEquals(1, alunos.get(0).getId());
     }
 
     @Test
     public void testDeletarAlunoPorId() {
-        Aluno aluno = new Aluno("João", "joao123", "senha123");
+        Aluno aluno = new Aluno("Filipe Matos", "filipeanima@educacao.com.br", "senha47851");
         Sistema.adicionarAluno(aluno);
 
         boolean resultado = Sistema.deletarAlunoPorId(aluno.getId());
@@ -38,7 +38,7 @@ public class SistemaTest {
 
     @Test
     public void testListaImutavel() {
-        Aluno aluno = new Aluno("Ana", "ana123", "senha123");
+        Aluno aluno = new Aluno("Raquel Dias", "raquelanima@educacao.com.br", "senha56978");
         Sistema.adicionarAluno(aluno);
 
         List<Aluno> copia = Sistema.getAlunos();
